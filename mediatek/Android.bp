@@ -1,0 +1,37 @@
+cc_prebuilt_binary {
+    name: "mt6660_calibration",
+    owner: "mtk",
+    proprietary: true,
+    compile_multilib: "first",
+    multilib: {
+        lib64: {
+            srcs: ["mt6660_calibration_64"],
+        },
+        lib32: {
+            srcs: ["mt6660_calibration"],
+        },
+    },
+    shared_libs: ["libc", "libdl", "liblog", "libm"],
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_binary {
+    name: "rt5512_calibration",
+    owner: "mtk",
+    proprietary: true,
+    compile_multilib: "first",
+    multilib: {
+        lib64: {
+            srcs: ["rt5512_calibration_64"],
+        },
+        lib32: {
+            srcs: ["rt5512_calibration"],
+        },
+    },
+    shared_libs: ["libc", "libdl", "liblog", "libm"],
+    strip: {
+        none: true,
+    },
+}
