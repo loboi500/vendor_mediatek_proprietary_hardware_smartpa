@@ -1,0 +1,4 @@
+cirrus filter=lfs diff=lfs merge=lfs -text
+mediatek filter=lfs diff=lfs merge=lfs -text
+nxp filter=lfs diff=lfs merge=lfs -text
+richtek filter=lfs diff=lfs merge=lfs -text
